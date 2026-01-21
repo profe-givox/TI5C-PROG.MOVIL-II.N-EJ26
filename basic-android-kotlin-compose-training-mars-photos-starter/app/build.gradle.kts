@@ -64,6 +64,10 @@ android {
 }
 
 dependencies {
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+// Retrofit with Scalar Converter
+    implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
 
     // Import the Compose BOM
     implementation(platform("androidx.compose:compose-bom:2024.12.01"))
