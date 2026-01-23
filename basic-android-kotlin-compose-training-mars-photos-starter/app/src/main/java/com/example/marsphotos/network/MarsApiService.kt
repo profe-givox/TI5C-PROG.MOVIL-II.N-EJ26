@@ -4,6 +4,7 @@ import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import retrofit2.Retrofit
 import retrofit2.http.GET
+import retrofit2.http.POST
 
 private const val BASE_URL =
     "https://android-kotlin-fun-mars-server.appspot.com"
@@ -17,6 +18,7 @@ private val retrofit = Retrofit.Builder()
 interface MarsApiService {
     @GET("photos")
     suspend fun getPhotos(): List<MarsPhoto>
+
 }
 
 object MarsApi {
