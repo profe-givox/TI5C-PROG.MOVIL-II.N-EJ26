@@ -81,7 +81,7 @@ fun RaceTrackerApp() {
         playerOne = playerOne,
         playerTwo = playerTwo,
         isRunning = raceInProgress,
-        onRunStateChange = { raceInProgress = it },
+        onRunStateChange = {  raceInProgress = it }  ,
         modifier = Modifier
             .statusBarsPadding()
             .fillMaxSize()
