@@ -131,7 +131,9 @@ fun MiMapaOSMDroidCompose(){
         MarkerOSMD(
             state = depokMarkerState
         )
-        com.utsman.osmandcompose.Polyline(geoPoints = geoPointPolyline)
+        com.utsman.osmandcompose.Polyline(geoPoints = geoPointPolyline,
+            color = Color.Red, 20f
+            )
     }
 }
 

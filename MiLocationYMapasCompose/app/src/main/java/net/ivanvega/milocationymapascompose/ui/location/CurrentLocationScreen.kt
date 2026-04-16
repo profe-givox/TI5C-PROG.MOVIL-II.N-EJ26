@@ -114,6 +114,7 @@ fun CurrentLocationContent(usePreciseLocation: Boolean) {
             onClick = {
                 //To get more accurate or fresher device location use this method
                 scope.launch(Dispatchers.IO) {
+
                     val priority = if (usePreciseLocation) {
                         Priority.PRIORITY_HIGH_ACCURACY
                     } else {
