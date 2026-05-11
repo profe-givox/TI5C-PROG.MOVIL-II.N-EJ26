@@ -50,10 +50,6 @@ kotlin {
 
             implementation(libs.ktor.client.android)
             implementation(libs.android.driver)
-
-            implementation(libs.androidx.compose.material3)
-            implementation(libs.koin.androidx.compose)
-            implementation(libs.androidx.lifecycle.viewmodelCompose)
         }
         commonMain.dependencies {
             implementation(libs.compose.runtime)
@@ -81,6 +77,7 @@ kotlin {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutinesSwing)
             implementation(libs.sqlite.jvm.driver)
+            implementation(libs.ktor.client.android)
         }
         all {
             languageSettings.optIn("kotlin.time.ExperimentalTime")
